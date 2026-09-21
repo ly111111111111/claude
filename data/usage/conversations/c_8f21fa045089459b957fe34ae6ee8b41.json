@@ -1,0 +1,35 @@
+{
+  "conv_id": "c_8f21fa045089459b957fe34ae6ee8b41",
+  "updated_at": "2026-09-21T10:10:58+08:00",
+  "totals": {
+    "input_tokens": 20188,
+    "output_tokens": 93,
+    "total_tokens": 20281,
+    "turns": 1
+  },
+  "by_session": {
+    "098c9569-5444-4410-b80b-cfc89ded920a": {
+      "session_id": "098c9569-5444-4410-b80b-cfc89ded920a",
+      "conv_id": "c_8f21fa045089459b957fe34ae6ee8b41",
+      "input_tokens": 20188,
+      "output_tokens": 93,
+      "total_tokens": 20281,
+      "turns": 1,
+      "updated_at": "2026-09-21T10:10:58+08:00"
+    }
+  },
+  "history": [
+    {
+      "ts": "2026-09-21T10:10:58+08:00",
+      "conv_id": "c_8f21fa045089459b957fe34ae6ee8b41",
+      "session_id": "098c9569-5444-4410-b80b-cfc89ded920a",
+      "model": "Qwen3.8",
+      "input_tokens": 20188,
+      "output_tokens": 93,
+      "total_tokens": 20281,
+      "cache_read_input_tokens": 0,
+      "num_turns": 1,
+      "cost_usd": 0.103265
+    }
+  ]
+}

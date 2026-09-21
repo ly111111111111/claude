@@ -1,0 +1,7 @@
+产品季度备忘
+==============
+
+1. Q1 重点：华北渠道回款与库存周转
+2. sales.csv 为模拟销售明细，字段：date,region,product,amount,quantity
+3. demo.db 内含 customers / orders 两张表，可用自然语言让 Claude 查询
+4. 如需换数据目录，在页面顶部填写服务器绝对路径后点击「应用」

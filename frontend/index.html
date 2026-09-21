@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claude 数据助手</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css?v=31" />
+</head>
+<body>
+  <div id="app-root" class="app-root">
+  <div class="shell" id="view-chat">
+    <aside class="side">
+      <div class="side-brand">
+        <div class="logo" aria-hidden="true">C</div>
+        <div>
+          <h1>Claude</h1>
+          <p id="side-model">数据助手</p>
+        </div>
+      </div>
+
+      <button type="button" id="btn-new" class="btn-new">新对话</button>
+
+      <div id="conv-list" class="conv-list" aria-label="对话列表"></div>
+
+      <div id="usage-panel" class="usage-panel">
+        <div class="usage-title">本对话 Token</div>
+        <div id="usage-summary" class="usage-summary">加载中…</div>
+      </div>
+
+      <!-- 工作区/知识库路径与浏览：对用户隐藏；逻辑仍用隐藏节点 -->
+      <div class="ws-hidden" hidden aria-hidden="true">
+        <input id="workspace" type="hidden" value="" />
+        <span id="ws-status"></span>
+        <div id="ws-active"></div>
+        <p id="kb-path"></p>
+        <button type="button" id="btn-browse"></button>
+        <div id="browser" class="browser hidden">
+          <button type="button" id="btn-up"></button>
+          <span id="browser-path"></span>
+          <button type="button" id="btn-close-browser"></button>
+          <div id="browser-msg"></div>
+          <div id="browser-list"></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="main-top">
+        <h2 id="conv-title">新对话</h2>
+      </header>
+
+      <section id="messages" class="messages" aria-live="polite"></section>
+
+      <div class="composer-wrap">
+        <footer class="composer">
+          <div class="composer-input-wrap">
+            <textarea
+              id="input"
+              rows="1"
+              placeholder="给 Claude 发送消息…"
+            ></textarea>
+          </div>
+          <div class="composer-bar">
+            <button type="button" id="btn-upload" class="ghost">上传到工作区</button>
+            <button type="button" id="btn-stop" class="btn-stop hidden">停止</button>
+            <button type="button" id="btn-send">发送</button>
+          </div>
+          <input
+            id="file-upload"
+            type="file"
+            accept=".xlsx,.xls,.csv,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,text/csv"
+            hidden
+          />
+        </footer>
+      </div>
+    </main>
+
+    <aside id="html-preview" class="html-preview hidden" aria-hidden="true">
+      <div class="html-preview-resizer" id="html-preview-resizer" title="拖动调整宽度"></div>
+      <div class="html-preview-bar">
+        <span id="html-preview-title">页面预览</span>
+        <div class="html-preview-actions">
+          <a id="html-preview-open" class="ghost tiny" href="#" target="_blank" rel="noopener">新窗口</a>
+          <button type="button" id="btn-html-close" class="ghost tiny">关闭</button>
+        </div>
+      </div>
+      <iframe id="html-preview-frame" title="HTML 预览" sandbox="allow-scripts allow-forms allow-modals"></iframe>
+    </aside>
+  </div>
+  </div>
+
+  <div id="case-drawer" class="case-drawer hidden" aria-hidden="true">
+    <div class="case-backdrop" id="case-backdrop"></div>
+    <div class="case-panel" role="dialog" aria-modal="true">
+      <header class="case-head">
+        <div>
+          <div class="case-kicker">案件档案</div>
+          <h3 id="case-title">—</h3>
+          <p id="case-path" class="case-path"></p>
+        </div>
+        <button type="button" id="btn-close-case" class="ghost">关闭</button>
+      </header>
+      <div id="case-msg" class="case-msg"></div>
+      <section id="case-excel" class="case-excel hidden">
+        <div class="case-section-title">案件信息</div>
+        <dl id="case-excel-fields" class="case-excel-fields"></dl>
+      </section>
+      <div class="case-body">
+        <aside class="case-nav">
+          <div class="case-nav-block">
+            <div class="case-section-title">数据类型</div>
+            <div id="case-type-list" class="case-type-list"></div>
+          </div>
+          <div class="case-nav-block">
+            <div class="case-section-title">文件</div>
+            <div id="case-file-list" class="case-file-list"></div>
+          </div>
+        </aside>
+        <section class="case-viewer">
+          <div class="case-viewer-head">
+            <div class="case-section-title" id="case-pdf-name">PDF 预览</div>
+            <a id="case-pdf-open" class="case-pdf-open hidden" href="#" target="_blank" rel="noopener">新窗口打开</a>
+          </div>
+          <div class="case-viewer-body">
+            <iframe id="case-pdf" title="PDF 预览"></iframe>
+            <div id="case-pdf-empty" class="case-pdf-empty">选择左侧文件以预览 PDF</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/vendor/marked.min.js"></script>
+  <script src="/static/vendor/purify.min.js"></script>
+  <script src="/static/app.js?v=31"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+本项目已按 Linux x86_64 + 自建 LiteLLM 配好。
+
+拷到 Linux 时带上：
+  backend/  frontend/  data/  scripts/
+  .env  requirements.txt  requirements_frozen.txt
+  offline_packages_linux/
+不要带 Windows 的 .venv。
+
+Linux 上执行：
+  bash scripts/install-linux.sh
+  source .venv/bin/activate
+  python -m backend.main
+
+模型请求地址：http://143.21.64.150:4000/v1/messages
+Key：sk-admin-123456
+模型名：dsv4（若 LiteLLM 里别名不同，改 .env 的 CLAUDE_MODEL）
+
+工作区：/home/ai/claude-workspaces
+案件 PDF：/home/ai/wenshu/数据pdf版
+案件表：/home/ai/下载/反查数据(1).csv
+知识库目录不存在就在 .env 里设 KNOWLEDGE_ROOT。

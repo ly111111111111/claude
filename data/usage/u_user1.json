@@ -1,0 +1,114 @@
+{
+  "user_id": "u_user1",
+  "updated_at": "2026-08-31T09:56:11+08:00",
+  "totals": {
+    "input_tokens": 86110,
+    "output_tokens": 1956,
+    "total_tokens": 88066,
+    "turns": 5
+  },
+  "by_day": {
+    "2026-08-24": {
+      "input_tokens": 24393,
+      "output_tokens": 1492,
+      "total_tokens": 25885,
+      "turns": 2
+    },
+    "2026-08-31": {
+      "input_tokens": 61717,
+      "output_tokens": 464,
+      "total_tokens": 62181,
+      "turns": 3
+    }
+  },
+  "by_month": {
+    "2026-08": {
+      "input_tokens": 86110,
+      "output_tokens": 1956,
+      "total_tokens": 88066,
+      "turns": 5
+    }
+  },
+  "by_session": {
+    "024eb076-068f-4797-97cf-dfc485373ec6": {
+      "session_id": "024eb076-068f-4797-97cf-dfc485373ec6",
+      "conv_id": "3139f74f-c322-4a7b-b887-1e0238d7a5d7",
+      "input_tokens": 24393,
+      "output_tokens": 1492,
+      "total_tokens": 25885,
+      "turns": 2,
+      "updated_at": "2026-08-24T15:55:51+08:00"
+    },
+    "1356ad0b-110f-4dc1-90ba-31fabcd99c6d": {
+      "session_id": "1356ad0b-110f-4dc1-90ba-31fabcd99c6d",
+      "conv_id": "1e439951-a06d-4fe4-941a-f03f7a8134aa",
+      "input_tokens": 61717,
+      "output_tokens": 464,
+      "total_tokens": 62181,
+      "turns": 3,
+      "updated_at": "2026-08-31T09:56:11+08:00"
+    }
+  },
+  "history": [
+    {
+      "ts": "2026-08-24T15:52:58+08:00",
+      "session_id": "024eb076-068f-4797-97cf-dfc485373ec6",
+      "conv_id": "3139f74f-c322-4a7b-b887-1e0238d7a5d7",
+      "model": "MiniMax-M3",
+      "input_tokens": 21989,
+      "output_tokens": 670,
+      "total_tokens": 22659,
+      "cache_read_input_tokens": 65435,
+      "num_turns": 4,
+      "cost_usd": 0.1594125
+    },
+    {
+      "ts": "2026-08-24T15:55:51+08:00",
+      "session_id": "024eb076-068f-4797-97cf-dfc485373ec6",
+      "conv_id": "3139f74f-c322-4a7b-b887-1e0238d7a5d7",
+      "model": "MiniMax-M3",
+      "input_tokens": 2404,
+      "output_tokens": 822,
+      "total_tokens": 3226,
+      "cache_read_input_tokens": 68859,
+      "num_turns": 5,
+      "cost_usd": 0.22641200000000003
+    },
+    {
+      "ts": "2026-08-31T09:42:29+08:00",
+      "session_id": "1356ad0b-110f-4dc1-90ba-31fabcd99c6d",
+      "conv_id": "1e439951-a06d-4fe4-941a-f03f7a8134aa",
+      "model": "Qwen3.8",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "num_turns": 1,
+      "cost_usd": 0.0
+    },
+    {
+      "ts": "2026-08-31T09:54:44+08:00",
+      "session_id": "1356ad0b-110f-4dc1-90ba-31fabcd99c6d",
+      "conv_id": "1e439951-a06d-4fe4-941a-f03f7a8134aa",
+      "model": "Qwen3.8",
+      "input_tokens": 20270,
+      "output_tokens": 250,
+      "total_tokens": 20520,
+      "cache_read_input_tokens": 0,
+      "num_turns": 1,
+      "cost_usd": 0.1076
+    },
+    {
+      "ts": "2026-08-31T09:56:11+08:00",
+      "session_id": "1356ad0b-110f-4dc1-90ba-31fabcd99c6d",
+      "conv_id": "1e439951-a06d-4fe4-941a-f03f7a8134aa",
+      "model": "Qwen3.8",
+      "input_tokens": 41447,
+      "output_tokens": 214,
+      "total_tokens": 41661,
+      "cache_read_input_tokens": 0,
+      "num_turns": 2,
+      "cost_usd": 0.320185
+    }
+  ]
+}

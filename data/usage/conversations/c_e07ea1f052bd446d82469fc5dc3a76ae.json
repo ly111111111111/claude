@@ -1,0 +1,12 @@
+{
+  "conv_id": "c_e07ea1f052bd446d82469fc5dc3a76ae",
+  "updated_at": "2026-09-21T09:47:58+08:00",
+  "totals": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "turns": 0
+  },
+  "by_session": {},
+  "history": []
+}

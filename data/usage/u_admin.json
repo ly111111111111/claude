@@ -1,0 +1,51 @@
+{
+  "user_id": "u_admin",
+  "updated_at": "2026-08-24T15:50:12+08:00",
+  "totals": {
+    "input_tokens": 21413,
+    "output_tokens": 146,
+    "total_tokens": 21559,
+    "turns": 1
+  },
+  "by_day": {
+    "2026-08-24": {
+      "input_tokens": 21413,
+      "output_tokens": 146,
+      "total_tokens": 21559,
+      "turns": 1
+    }
+  },
+  "by_month": {
+    "2026-08": {
+      "input_tokens": 21413,
+      "output_tokens": 146,
+      "total_tokens": 21559,
+      "turns": 1
+    }
+  },
+  "by_session": {
+    "8ea0cf74-8cb0-4c12-820a-8cb1b56c770c": {
+      "session_id": "8ea0cf74-8cb0-4c12-820a-8cb1b56c770c",
+      "conv_id": "768bbd03-eedb-455d-94fe-7ce2104bddd3",
+      "input_tokens": 21413,
+      "output_tokens": 146,
+      "total_tokens": 21559,
+      "turns": 1,
+      "updated_at": "2026-08-24T15:50:12+08:00"
+    }
+  },
+  "history": [
+    {
+      "ts": "2026-08-24T15:50:12+08:00",
+      "session_id": "8ea0cf74-8cb0-4c12-820a-8cb1b56c770c",
+      "conv_id": "768bbd03-eedb-455d-94fe-7ce2104bddd3",
+      "model": "MiniMax-M3",
+      "input_tokens": 21413,
+      "output_tokens": 146,
+      "total_tokens": 21559,
+      "cache_read_input_tokens": 128,
+      "num_turns": 1,
+      "cost_usd": 0.110779
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "user_id": "u_admin",
+      "username": "admin",
+      "display_name": "管理员",
+      "role": "admin",
+      "salt": "634676f696ee1d0b688b6138bfd20a95",
+      "password_hash": "f6ccf766095063e09e4cc75d11f744657df635598065af064116e97aefba46e3",
+      "created_at": "2026-08-24T15:45:13+08:00",
+      "seeded": true
+    },
+    {
+      "user_id": "u_user1",
+      "username": "user1",
+      "display_name": "用户一",
+      "role": "user",
+      "salt": "0023072268e6ae6e2e920b938570600b",
+      "password_hash": "1669c6cf4672da1cd4d6975fb3f1eca9af709b37341cfc14d6cbd302a9d86654",
+      "created_at": "2026-08-24T15:45:13+08:00",
+      "seeded": true
+    },
+    {
+      "user_id": "u_user2",
+      "username": "user2",
+      "display_name": "用户二",
+      "role": "user",
+      "salt": "76953b73c9c907b4aad23a185f0dc8cb",
+      "password_hash": "7fe53ac4300f66f76c9c0f9a166a8faa9bd463da6a69fc2f93326ef92311fc6c",
+      "created_at": "2026-08-24T15:45:14+08:00",
+      "seeded": true
+    }
+  ],
+  "sessions": {
+    "ZPn_0elZ1XHbpzoLF6xi83hVUHa6vax84Ot7A26wgYM": {
+      "user_id": "u_admin",
+      "username": "admin",
+      "created_at": "2026-08-24T15:45:33+08:00"
+    },
+    "ICYZ5kCmYf2ofwrIUj0aruOcg6S4u0RtlxDSgNoB5i8": {
+      "user_id": "u_user1",
+      "username": "user1",
+      "created_at": "2026-08-24T15:52:21+08:00"
+    },
+    "0jiwr0aO1s9XQ8Q938sBkOD-HZbIQRXU_kg8d7Oe2WI": {
+      "user_id": "u_user1",
+      "username": "user1",
+      "created_at": "2026-08-31T09:42:21+08:00"
+    }
+  }
+}

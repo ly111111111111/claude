@@ -1,0 +1,74 @@
+﻿=== SSE result event (当前 _serialize 输出) ===
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "session_id": "65fc03b9-1dec-4f82-ae7c-64cdddf9ef38",
+  "num_turns": 1,
+  "result": "收到",
+  "errors": null
+}
+
+=== 原始 ResultMessage 字段 ===
+--- result #1 ---
+subtype: success
+num_turns: 1
+total_cost_usd: 0.10796399999999999
+usage: {
+  "input_tokens": 21355,
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 128,
+  "output_tokens": 45,
+  "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "",
+  "iterations": [],
+  "speed": "standard"
+}
+model_usage: {
+  "MiniMax-M3": {
+    "inputTokens": 21355,
+    "outputTokens": 45,
+    "cacheReadInputTokens": 128,
+    "cacheCreationInputTokens": 0,
+    "webSearchRequests": 0,
+    "costUSD": 0.10796399999999999,
+    "contextWindow": 200000,
+    "maxOutputTokens": 32000,
+    "canonicalModel": "minimax-m3",
+    "provider": "firstParty"
+  }
+}
+serialized keys: ['type', 'subtype', 'is_error', 'session_id', 'num_turns', 'result', 'errors']
+
+=== 全部 SSE 事件类型 ===
+['session', 'delta', 'assistant', 'result']
+D:\program\python12\python.exe : Exception ignored in: <function BaseSubprocessTransport.__del__ at 0x000001BDE7DC51C0>
+所在位置 C:\Users\Mr.li\AppData\Local\Temp\ps-script-332406c2-4fba-499b-aa86-52429a2a6160.ps1:7 字符: 1
++ D:\program\python12\python.exe scripts\verify_token_usage.py 2>&1 | O ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Exception ignor...0001BDE7DC51C0>:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Traceback (most recent call last):
+  File "D:\program\python12\Lib\asyncio\base_subprocess.py", line 126, in __del__
+  File "D:\program\python12\Lib\asyncio\base_subprocess.py", line 104, in close
+  File "D:\program\python12\Lib\asyncio\proactor_events.py", line 109, in close
+  File "D:\program\python12\Lib\asyncio\base_events.py", line 792, in call_soon
+  File "D:\program\python12\Lib\asyncio\base_events.py", line 539, in _check_closed
+RuntimeError: Event loop is closed
+Exception ignored in: <function BaseSubprocessTransport.__del__ at 0x000001BDE7DC51C0>
+Traceback (most recent call last):
+  File "D:\program\python12\Lib\asyncio\base_subprocess.py", line 126, in __del__
+  File "D:\program\python12\Lib\asyncio\base_subprocess.py", line 104, in close
+  File "D:\program\python12\Lib\asyncio\proactor_events.py", line 109, in close
+  File "D:\program\python12\Lib\asyncio\base_events.py", line 792, in call_soon
+  File "D:\program\python12\Lib\asyncio\base_events.py", line 539, in _check_closed
+RuntimeError: Event loop is closed
